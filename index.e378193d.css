@@ -1,0 +1,121 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+:root {
+  --main-color: #060b35;
+  --secondary-color: #616070;
+  --blue-accent: #00acdc;
+  --white-accent: #fff;
+  --gray-accent: #f3f3f3;
+}
+
+.card {
+  background-color: var(--white-accent);
+  border: 1px solid var(--gray-accent);
+  border-radius: 5px;
+  flex-direction: column;
+  width: 200px;
+  padding: 32px 16px 16px;
+  display: flex;
+}
+
+.card__image {
+  width: 160px;
+  height: 134px;
+  margin: 0 auto 40px;
+  display: block;
+}
+
+.card__title {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.card__product-code {
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.card-rating {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.card__price {
+  justify-content: space-between;
+  margin-bottom: 16px;
+  line-height: 18px;
+  display: flex;
+}
+
+.card__price-label {
+  color: var(--secondary-color);
+  font-size: 12px;
+}
+
+.card__price-value {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card__button {
+  background-color: var(--blue-accent);
+  text-transform: uppercase;
+  color: var(--white-accent);
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 166px;
+  height: 40px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  display: flex;
+}
+
+.card__button:hover {
+  background-color: var(--white-accent);
+  border: 1px solid var(--blue-accent);
+  color: var(--blue-accent);
+}
+
+.stars {
+  gap: 4px;
+  display: flex;
+}
+
+.stars__star {
+  background-image: url("star.fa806e3c.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.stars--1 :nth-child(-n+1), .stars--2 :nth-child(-n+2), .stars--3 :nth-child(-n+3), .stars--4 :nth-child(-n+4), .stars--5 :nth-child(-n+5) {
+  background-image: url("star-active.2be54011.svg");
+}
+
+.stars-reviews {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  color: var(--main-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+/*# sourceMappingURL=index.e378193d.css.map */
